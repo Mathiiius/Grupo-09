@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+
+  <!--Esta sección corresponde al header-->
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="#">Página</a></div>
+      <ul class="links">
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#cursos">Courses</a></li>
+        <li><a href="#precios">Pricing</a></li>
+        <li><a href="#sobre-nosotros">About Us</a></li>
+        <li><a href="#contacto">Contact Us</a></li>
+      </ul>
+      <a href="#" class="btnLogin-popup">User</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#cursos">Courses</a></li>
+        <li><a href="#precios">Pricing</a></li>
+        <li><a href="#sobre-nosotros">About Us</a></li>
+        <li><a href="#contacto">Contact Us</a></li>
+        <li><a href="#" class="btnLogin-popup2">User</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <div class="wrapper">
+    <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required>
+          <label>Contraseña</label>
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+        <div class="cont">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="login-register">
+          <p>¿No estas registrado?
+            <a href="#" class="register-link">Registrate</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="form-box register">
+      <h2>Registrarte</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-user"></i></span>
+          <input type="text" required>
+          <label>Nombre del usuario</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" required>
+          <label>Contraseña</label>
+        </div>
+        <div class="remember-forgot">
+          <label>
+            <input type="checkbox"> I agree to the terms & conditions
+          </label>
+        </div>
+        <button type="submit" class="btn-login">Crear cuenta</button>
+        <div class="login-register">
+          <p>¿Ya estás registrado?
+            <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- esta sección corresponde a "Inicio" -->
+    <section id="inicio" class="home-section">
+      <h1 class="hero">
+        <span class="hero-text">Knowledge</span> <br>
+        <span class="negrita">does not take<br>
+          up</span><span class="hero-text">space</span>
+      </h1>
+      <p class="parrafo">
+        In our virtual space, you will find a wide range of courses designed to expand your horizons, no matter how much
+        space you have available in your daily life. Immerse yourself in an ocean of knowledge accessible from anywhere,
+        at any time. The learning adventure awaits you!
+      </p>
+    </section>
+
+    <!-- esta sección corresponde a "Cursos" -->
+    <section id="cursos" class="courses__section">
+      <h2 class="courses__title">Courses</h2>
+
+      <div class="courses__grid-container">
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 1</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 2</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 3</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 4</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 5</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 6</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 7</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+        <div class="courses__grid-item flex-item">
+          <img src="./20-367x267.jpg" alt="" class="courses__img">
+          <h4 class="card__title">Course 8</h4>
+          <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque esse distinctio ad,
+            suscipit nesciunt vel officiis quas saepe veritatis iusto? Veritatis perferendis impedit quidem tempore,
+            velit eos ipsam! Debitis, dolores!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- esta sección corresponde a "Precios" -->
+    <section id="precios" class="pricing-section">
+      <h2 class="pricing-title">Pricing</h2>
+      <div class=" container">
+        <div class="pricing-cards">
+          <!-- Plan Basic -->
+          <div class="card">
+            <h2>Basic</h2>
+            <p class="price">$200/mes</p>
+            <ul class="items-ul">
+              <li>Acceso a 5 cursos</li>
+              <li>Soporte por correo electrónico</li>
+              <li>Actualizaciones mensuales</li>
+            </ul>
+            <button class="btn-pricing">Get Started</button>
+          </div>
+
+          <!-- Plan Standard -->
+          <div class="card">
+            <h2>Standard</h2>
+            <p class="price">$400/mes</p>
+            <ul class="items-ul">
+              <li>Acceso a 10 cursos</li>
+              <li>Soporte por correo y chat</li>
+              <li>Actualizaciones semanales</li>
+              <li>Descuentos exclusivos</li>
+            </ul>
+            <button class="btn-pricing">Get Started</button>
+          </div>
+
+          <!-- Plan Premium -->
+          <div class="card">
+            <h2>Premium</h2>
+            <p class="price">$600/mes</p>
+            <ul class="items-ul">
+              <li>Acceso ilimitado a todos los cursos</li>
+              <li>Soporte prioritario 24/7</li>
+              <li>Actualizaciones diarias</li>
+              <li>Material exclusivo</li>
+              <li>Asesoría personalizada</li>
+            </ul>
+            <button class="btn-pricing">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- esta sección corresponde a "Sobre Nosotros" -->
+    <section id="sobre-nosotros" class="about-section">
+      <h2 class="about-title">About Us</h2>
+      <div class="container">
+        <div class="about-team">
+          <div class="team-member">
+            <img src="team-member1.jpg" alt="Miembro del Equipo 1">
+            <div class="team-member-info">
+              <h3>Matias Guiñez</h3>
+              <p>Rol en la Empresa</p>
+              <p>Descripción breve del miembro del equipo y sus responsabilidades.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img src="team-member2.jpg" alt="Miembro del Equipo 2">
+            <div class="team-member-info">
+              <h3>Nombre del Miembro 2</h3>
+              <p>Rol en la Empresa</p>
+              <p>Descripción breve del miembro del equipo y sus responsabilidades.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img src="team-member3.jpg" alt="Miembro del Equipo 3">
+            <div class="team-member-info">
+              <h3>Nombre del Miembro 3</h3>
+              <p>Rol en la Empresa</p>
+              <p>Descripción breve del miembro del equipo y sus responsabilidades.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <img src="team-member4.jpg" alt="Miembro del Equipo 4">
+            <div class="team-member-info">
+              <h3>Nombre del Miembro 4</h3>
+              <p>Rol en la Empresa</p>
+              <p>Descripción breve del miembro del equipo y sus responsabilidades.</p>
+            </div>
+          </div>
+          <!-- Agregar más miembros -->
+        </div>
+      </div>
+    </section>
+
+    <!-- esta sección corresponde a "Contacto" -->
+    <section id="contacto" class="contact-section">
+      <div class="container-contacto">
+        <div class="form-contact-us">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <img src="location.png" class="icon" alt="location">
+                <p>92 Cherry Drive Uniondale, NY 11553</p>
+              </div>
+              <div class="information">
+                <img src="email.png" class="icon" alt="email">
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <img src="phone.png" class="icon" alt="phone">
+                <p>123-456-789</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form class="form-contact-us-dos" id="formId" method="post" action="index.html" autocomplete="off" onsubmit="return validarFormulario()" netlify>
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" id="usernameInput" name="name" class="input">
+                <label for="usernameInput">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" id="emailInput" name="email" class="input">
+                <label for="emailInput">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" id="phoneInput" name="phone" class="input">
+                <label for="phoneInput">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" id="messageInput" class="input"></textarea>
+                <label for="messageInput">Message</label>
+                <span>Message</span>
+              </div>
+              <div class="g-recaptcha input-container" data-sitekey="6LdoWdspAAAAAFMicXgWbJFyrV7Zhzyr32QNs9QQ"></div>
+              <input type="submit" value="Send" class="btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
+  </main>
+
+  <!-- esta sección corresponde a "Footer" -->
+  <footer id="footer-sections">
+    <div class="content-wrapper">
+      <p class="footer__text">&copy; 2024 Pagina</p>
+      <ul>
+        <li class="footer__links"> <a href="#">awdawdawd</a></li>
+        <li class="footer__links"> <a href="#">awdawdawd</a></li>
+        <li class="footer__links"> <a href="#">awdawdawd</a></li>
+        <li class="footer__links"> <a href="#">awdawdawd</a></li>
+
+
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+>>>>>>> 4edea68 (última actualización)
